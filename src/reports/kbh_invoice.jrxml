@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="kbinvoice" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="de575b86-47ba-4d82-b59e-f19226e5a4fa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="invoice_id" class="java.lang.String"/>
+	<parameter name="payment_type" class="java.lang.String"/>
+	<parameter name="date_time" class="java.lang.String"/>
+	<parameter name="customer" class="java.lang.String"/>
+	<parameter name="mobile" class="java.lang.String"/>
+	<parameter name="city" class="java.lang.String"/>
+	<parameter name="full_total" class="java.lang.Double"/>
+	<parameter name="payment" class="java.lang.Double"/>
+	<parameter name="balance" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="352" splitType="Stretch">
+			<staticText>
+				<reportElement x="188" y="130" width="178" height="20" uuid="8abda07c-f317-43f6-9f08-6edf79dde301"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[3/4, 7/3, Katugasthota, Kandy.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="216" y="10" width="123" height="119" uuid="3a2b2381-233a-4dae-bf03-84665a33ba46"/>
+				<imageExpression><![CDATA["C:/Users/ADMIN/Documents/Kur logos/KBH_Logo1(2)_rb1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="240" width="110" height="20" uuid="d2915dc0-d95c-45e7-ae0b-1fc64e7fac28"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Contact Number :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="70" height="20" uuid="15d1c408-2973-4821-9b70-40e63fc42869"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Customer :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="270" width="210" height="20" uuid="4747df4f-9712-432b-ad73-9fb2923b87ac"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="180" width="210" height="20" uuid="64702428-d78c-44b6-a0a3-8e3236073601"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{invoice_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="210" width="210" height="20" uuid="674146a5-c0ea-4a0b-aba9-9fe19c7bec19"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{customer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="270" width="40" height="20" uuid="0d531bb5-1c92-4b57-9fa6-1e2d84f8e66f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[City :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="300" width="210" height="20" uuid="4e7963f6-3c6b-4433-8cde-79469cc0b206"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="300" width="100" height="20" uuid="093e1778-af90-427d-a758-00f62e694518"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Date and Time :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="240" width="210" height="20" uuid="a040ae2b-7e3b-497a-a93c-4683dd91b6c7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobile}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="180" width="70" height="20" uuid="45e4cf08-8fce-46f3-a072-94510806e5fc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Invoice No :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="350" height="30" forecolor="#FFFFFF" backcolor="#00FF99" uuid="ba14c486-c330-4e88-bdec-a1b0522ad981">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46a068af-edbf-4eee-8ad4-31cc8cbdf4e5"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineColor="#3366FF"/>
+					<leftPen lineColor="#3366FF"/>
+					<bottomPen lineColor="#3366FF"/>
+					<rightPen lineColor="#3366FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="350" y="0" width="60" height="30" forecolor="#FFFFFF" backcolor="#00FF99" uuid="6937d402-a1f1-42e0-b87c-f322a65571f9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c009848-057e-4116-80f1-a4f669b7c8f7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineColor="#3366FF"/>
+					<leftPen lineColor="#3366FF"/>
+					<bottomPen lineColor="#3366FF"/>
+					<rightPen lineColor="#3366FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="0" width="70" height="30" forecolor="#FFFFFF" backcolor="#00FF99" uuid="6b904ac5-0088-4d60-93c6-d44ac4cbc972">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed59a479-017e-420c-a874-17059c3c84d9"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineColor="#3366FF"/>
+					<leftPen lineColor="#3366FF"/>
+					<bottomPen lineColor="#3366FF"/>
+					<rightPen lineColor="#3366FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="0" width="74" height="30" forecolor="#FFFFFF" backcolor="#00FF99" uuid="fd62a550-2b52-41af-9f98-1a9d420fa51d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1c7e52e-101c-4f9f-9054-63441f23009e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineColor="#3366FF"/>
+					<leftPen lineColor="#3366FF"/>
+					<bottomPen lineColor="#3366FF"/>
+					<rightPen lineColor="#3366FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="350" height="30" uuid="22768513-2a09-4777-8850-b1b32f98ee87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46a068af-edbf-4eee-8ad4-31cc8cbdf4e5"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="60" height="30" uuid="203728f9-0213-4d69-acd1-1e8bc60eead0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c009848-057e-4116-80f1-a4f669b7c8f7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="70" height="30" uuid="90f75bc0-d7e7-40ae-9524-708a2b48a09f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed59a479-017e-420c-a874-17059c3c84d9"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="74" height="30" uuid="b6eb70ad-df00-4c5e-ad53-5741dc770be2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1c7e52e-101c-4f9f-9054-63441f23009e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#3366FF"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="200" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="e226d2b1-5e87-4112-b86b-7cbb0da82700"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Full Total :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="30" width="74" height="20" uuid="d7cd5b67-c725-470c-8e4d-5b2c76251b76"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{full_total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="217" y="170" width="120" height="30" forecolor="#00CC66" uuid="1c18ec41-e925-4882-aecd-0e8888f95755"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20"/>
+				</textElement>
+				<text><![CDATA[Thank You!!!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="66" height="18" uuid="df8dc295-9598-4131-aefc-488b9bc8d644"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Payment :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="58" width="90" height="20" uuid="6bcf0461-f573-4d84-ad15-2e717bb28290"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Payment Type :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="58" width="74" height="20" uuid="190f6da4-227c-479b-946f-96a5e5155f4a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payment_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="120" width="56" height="20" uuid="8023e181-cb9d-4e3a-bae8-3a93b5037e75"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Balance :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="89" width="74" height="20" uuid="cb800eda-c1a9-4e71-9fc0-22a5defb762a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="120" width="74" height="20" uuid="6d729d9f-abd3-41e5-97f1-d041d0afc0af"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{balance}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
